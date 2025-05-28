@@ -1,0 +1,334 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-gradient: linear-gradient(135deg, #5085E3 0%, #94B8F2 100%);
+  --secondary-gradient: linear-gradient(135deg, #80ABFF 0%, #E6F0FF 100%);
+  --bg-light-gradient: linear-gradient(135deg, #e7f0ff 0%, #f5f9ff 50%, #ffffff 100%);
+  --text-light: #3a6fbf;
+  --text-light-secondary: #5b7ebd;
+}
+
+.dark {
+  --primary-gradient: linear-gradient(135deg, #3A6CC7 0%, #5085E3 100%);
+  --secondary-gradient: linear-gradient(135deg, #5085E3 0%, #80ABFF 100%);
+  --text-dark: #e2eaff;
+  --text-dark-secondary: #c4d4ff;
+}
+
+body {
+  @apply bg-gray-50 text-gray-800 transition-colors duration-300;
+  font-family: 'Quicksand', sans-serif;
+  overflow-x: hidden;
+}
+
+.dark body {
+  @apply bg-darkbg text-gray-200;
+}
+
+/* Floating Icon Animation */
+@keyframes float-animation {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(10px) rotate(-2deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.floating-icon {
+  position: absolute;
+  animation: float-animation 8s ease-in-out infinite;
+  will-change: transform;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.15));
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-darkbg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/60 dark:bg-primary/40 rounded-full;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary dark:bg-primary/70;
+}
+
+/* Scroll down animation */
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(4px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-scroll-down {
+  animation: scrollDown 1.5s infinite;
+}
+
+/* Parallax effect classes */
+.parallax {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  
+  /* Control the parallax effect via CSS variables */
+  --parallax-speed: 0.5;
+  --parallax-offset: 0px;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(var(--parallax-offset));
+  z-index: -1;
+  transition: transform 0.1s linear;
+  will-change: transform;
+}
+
+.parallax-fast {
+  --parallax-speed: 0.8;
+}
+
+.parallax-slow {
+  --parallax-speed: 0.3;
+}
+
+/* Custom scroll progress bar */
+.scroll-progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  z-index: 1000;
+  background: transparent;
+}
+
+.scroll-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-gradient));
+  width: 0%;
+  transition: width 0.1s ease;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+.animate-typing {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink .75s step-end infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.7s ease-out forwards;
+  opacity: 0;
+}
+
+/* Animasi untuk portfolio filtering */
+@keyframes portfolioFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-portfolio {
+  animation: portfolioFadeIn 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.nav-link {
+  @apply relative text-gray-600 dark:text-gray-300 hover:text-primary transition-all duration-300;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.scroll-indicator {
+  @apply fixed right-4 bottom-4 z-40 w-12 h-12 flex items-center justify-center rounded-full bg-primary cursor-pointer transition-all duration-300;
+  box-shadow: 0 0 20px rgba(80, 133, 227, 0.3);
+}
+
+.scroll-indicator:hover {
+  background-color: #3A6CC7;
+  transform: scale(1.1);
+}
+
+.bg-primary-dark {
+  background-color: #3A6CC7;
+}
+
+.text-primary {
+  color: #5085E3;
+}
+
+.text-primary-dark {
+  color: #3A6CC7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  @apply bg-primary text-white;
+}
+
+.font-quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Glassmorphism effect */
+.glass-effect {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px rgba(80, 133, 227, 0.1);
+}
+
+.dark .glass-effect {
+  background-color: rgba(30, 36, 51, 0.7);
+  border: 1px solid rgba(36, 44, 62, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(80, 133, 227, 0.2);
+}
+
+.dark .card-hover:hover {
+  box-shadow: 0 10px 25px rgba(58, 108, 199, 0.3);
+}
+
+/* Animation for section entrance */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+/* Dark mode toggle animation */
+.theme-toggle {
+  @apply p-2 rounded-full transition-transform duration-300 ease-in-out;
+}
+
+.theme-toggle:hover {
+  transform: rotate(15deg);
+}
+
+@keyframes progress-bar {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 70%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 2s linear infinite;
+}
+
+@keyframes gradient-x {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
