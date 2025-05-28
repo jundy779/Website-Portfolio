@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: 'export',
+  // output: 'export', // commented out for Vercel deployment
   images: {
     domains: [
       'kappa.lol',
@@ -25,7 +25,6 @@ const nextConfig = {
   // Mengaktifkan optimasi opsional untuk build yang lebih kecil
   optimizeFonts: true,
   swcMinify: true,
-
 }
 
 module.exports = nextConfig 
