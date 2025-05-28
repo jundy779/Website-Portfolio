@@ -3,6 +3,7 @@ Website portfolio kece buat Kalian. Dibuat pakai Next.js, React, dan Tailwind CS
 
 ![image](https://github.com/user-attachments/assets/c1a694d1-0aeb-438a-8f51-f5cc313c9bb3)
 ![image](https://github.com/user-attachments/assets/31a2d151-9654-4a55-8504-69f8901497a0)
+![image](https://github.com/user-attachments/assets/aea9a5e0-5758-4e62-b1ff-c29c59d63b82)
 
 
 ## Apa Sih Ini? 🤔
