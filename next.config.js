@@ -19,9 +19,9 @@ const nextConfig = {
   },
   // Gunakan basePath hanya pada mode production (untuk GitHub Pages)
   // Di mode development, basePath tidak akan digunakan
-  basePath: process.env.NODE_ENV === 'production' ? '/portfolio-website' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/Website-Portfolio' : '',
   // Seting assetPrefix untuk URL aset statis
-  assetPrefix: process.env.NODE_ENV === 'production' ? 'https://jundy779.github.io/portfolio-website' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? 'https://jundy779.github.io/Website-Portfolio' : '',
   // Mengaktifkan optimasi opsional untuk build yang lebih kecil
   optimizeFonts: true,
   swcMinify: true,
