@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // output: 'export', // commented out for Vercel deployment
+  // output: 'export', // hanya untuk static export, JANGAN untuk Vercel
   images: {
     domains: [
       'kappa.lol',
@@ -17,12 +17,6 @@ const nextConfig = {
     ],
     unoptimized: true,
   },
-  // Gunakan basePath hanya pada mode production (untuk GitHub Pages)
-  // Di mode development, basePath tidak akan digunakan
-  basePath: process.env.NODE_ENV === 'production' ? '/Website-Portfolio' : '',
-  // Seting assetPrefix untuk URL aset statis
-  assetPrefix: process.env.NODE_ENV === 'production' ? 'https://jundy779.github.io/Website-Portfolio' : '',
-  // Mengaktifkan optimasi opsional untuk build yang lebih kecil
   optimizeFonts: true,
   swcMinify: true,
 }
