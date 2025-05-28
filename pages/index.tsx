@@ -411,8 +411,8 @@ export default function Home() {
             <div className="relative inline-block mb-6" data-aos="zoom-in" data-aos-delay="300">
               <div className="w-32 h-32 rounded-full bg-white dark:bg-darkbg-lighter shadow-lg overflow-hidden p-1 border border-primary/20">
                 <Image
-                  src="/profile-hero.jpg"
-                  alt="Profile Hero"
+                  src="/public/CHATGPT.png"
+                  alt="Profile"
                   width={128}
                   height={128}
                   priority
