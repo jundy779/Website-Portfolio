@@ -1,182 +1,100 @@
 # Website Portfolio Keren Pakai Next.js 🚀
 Website portfolio kece buat Kalian. Dibuat pakai Next.js, React, dan Tailwind CSS.
 
-![image](https://github.com/user-attachments/assets/c1a694d1-0aeb-438a-8f51-f5cc313c9bb3)
-![image](https://github.com/user-attachments/assets/31a2d151-9654-4a55-8504-69f8901497a0)
-![image](https://github.com/user-attachments/assets/aea9a5e0-5758-4e62-b1ff-c29c59d63b82)
+A modern, responsive portfolio website showcasing my work as a Student, Gamer, and Business Development professional. Built with Next.js, React, and Tailwind CSS.
 
+![image](https://github.com/user-attachments/assets/
+c1a694d1-0aeb-438a-8f51-f5cc313c9bb3)
+![image](https://github.com/user-attachments/assets/
+31a2d151-9654-4a55-8504-69f8901497a0)
+![image](https://github.com/user-attachments/assets/
+aea9a5e0-5758-4e62-b1ff-c29c59d63b82)
 
-## Apa Sih Ini? 🤔
+## Live Demo
+Visit my portfolio at: [muh-jundy-rabbani.vercel.app](https://muh-jundy-rabbani.vercel.app)
 
-Website ini buat nampilkan karya-karya, kemampuan, pendidikan, pengalaman kerja, tulisan blog, dan info pribadi. Tampilannya modern dengan fitur mode gelap, animasi keren, dan bisa dibuka di HP atau laptop.
+## Features ✨
 
-## Fitur-Fitur Keren ✨
+- **Modern Design**: Clean and professional UI with smooth animations
+- **Dark/Light Mode**: Toggle between dark and light themes
+- **Responsive**: Fully responsive design for all devices
+- **Performance**: Optimized for speed and SEO
+- **Interactive**: Engaging user experience with smooth transitions
+- **Portfolio Showcase**: Display projects with detailed information
+- **Contact Section**: Easy ways to connect through social media
+- **Blog Integration**: Share thoughts and experiences
+- **Gallery**: Photo collection with protection features
 
-- **Tampilan Responsive**: Bisa dibuka di HP, tablet, atau laptop, tetap cakep!
-- **Mode Gelap/Terang**: Bisa ganti tampilan sesuai selera atau kondisi mata
-- **Animasi Smooth**: Efek gerak yang bikin website jadi hidup
-- **Banyak Bagian**: Ada About, Portfolio, Skills, Education, Experience, Blog, Gallery
-- **Bisa Difilter**: Karya dan blog bisa dikelompokkan sesuai kategori
-- **Ramah SEO**: Biar mudah ditemukan di Google
-- **Gambar Cepat Loading**: Nggak bikin kesel nunggu loading
-- **Kontak Lengkap**: Bisa dihubungi lewat sosmed atau form kontak
+## Tech Stack 🛠️
 
-## Teknologi yang Dipakai 🛠️
+- **Framework**: Next.js 13.5
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Tabler Icons
+- **Animations**: Framer Motion
+- **Analytics**: Vercel Analytics
+- **Deployment**: Vercel
 
-- **Next.js**: Buat bikin website yang cepat dan SEO-friendly
-- **React**: Untuk bikin tampilan yang interaktif
-- **TypeScript**: Biar coding lebih rapi dan minim error
-- **Tailwind CSS**: Styling yang praktis dan kekinian
-- **Framer Motion**: Buat animasi yang smooth
-- **Tabler Icons**: Icon-icon yang kece
+## Getting Started 🚀
 
-## Cara Pakai Website Ini 🚶‍♂️
+1. Clone the repository:
+```bash
+git clone https://github.com/jundy779/Website-Portfolio.git
+```
 
-### Yang Harus Disiapkan
+2. Install dependencies:
+```bash
+npm install
+```
 
-- Node.js (versi 14 ke atas) - software buat menjalankan kode JavaScript
-- npm atau yarn - alat buat menginstal paket/library
-
-### Cara Install
-
-1. Download/clone dulu kode website-nya:
-   ```sh
-   git clone https://github.com/jundy779/portfolio-website.git
-   ```
-2. Masuk ke folder projeknya:
-   ```sh
-   cd portfolio-website
-   ```
-3. Instal semua yang dibutuhkan:
-   ```sh
-   npm install
-   ```
-   atau kalau pakai yarn:
-   ```sh
-   yarn install
-   ```
-
-### Cara Jalanin di Komputer Sendiri
-
-Ketik perintah ini di terminal:
-```sh
+3. Run the development server:
+```bash
 npm run dev
 ```
-atau:
-```sh
-yarn dev
-```
-Terus buka `http://localhost:3000` di browser kamu.
 
-## Cara Ubah-Ubah Isinya 🎨
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Info Pribadi
-Edit file-file ini untuk ganti info personal:
+## Cara Upload ke Vercel (Agar Bisa Diakses Online) 🌐
 
-- `pages/index.tsx`: Ubah konten utama, tentang diri, dan daftar portfolio
-- `pages/blog.tsx`: Ganti tulisan blog
-- `pages/skill.tsx`: Update kemampuan dan kategorinya
-- `pages/education.tsx`: Ubah riwayat pendidikan
-- `pages/experience.tsx`: Perbarui pengalaman kerja
-- `pages/album.tsx`: Tambah/ubah foto galeri
+Website ini sudah diatur untuk otomatis muncul online lewat Vercel setiap kali kamu update kodenya. Gampang banget!
 
-### Tampilan
-- Styling utama: `styles/globals.css`
-- Warna-warna: Cari bagian CSS variables di `styles/globals.css`
-- Styling per komponen: Masing-masing komponen punya class CSS sendiri
+### 1. Bikin Akun Vercel
 
-### Gambar
-- Taruh gambar baru di folder `public`
-- Untuk gambar dari internet, pastikan domain-nya ditambahkan di `next.config.js`
+Kalau belum punya, bikin akun di [Vercel](https://vercel.com), terus hubungkan dengan akun GitHub kamu.
 
-## Cara Upload ke GitHub Pages (Agar Bisa Diakses Online) 🌐
+### 2. Import Repository
 
-Website ini sudah diatur untuk otomatis muncul online lewat GitHub Pages setiap kali kamu update kodenya. Gampang banget!
+1. Klik tombol "New Project" di dashboard Vercel
+2. Pilih repository GitHub yang mau di-deploy
+3. Vercel akan otomatis mendeteksi bahwa ini proyek Next.js
 
-### 1. Bikin Akun & Repository GitHub
+### 3. Deploy
 
-Kalau belum punya, bikin akun di [GitHub](https://github.com), terus bikin repository baru buat nyimpen kode website-mu.
+1. Klik "Deploy"
+2. Vercel akan otomatis build dan deploy website kamu
+3. Setelah selesai, website bisa diakses di URL yang diberikan Vercel
 
-### 2. Update Info Repository
+### 4. Custom Domain (Opsional)
 
-Di file `package.json`, ganti bagian ini sesuai username GitHub kamu:
+Kalau mau pakai domain sendiri:
+1. Buka project di dashboard Vercel
+2. Klik tab "Settings" > "Domains"
+3. Tambahkan domain kamu
+4. Ikuti instruksi untuk setup DNS
 
-```json
-{
-  "name": "nama-repository-kamu",
-  "homepage": "https://username-kamu.github.io/nama-repository-kamu"
-}
-```
+### 5. Update Otomatis
 
-### 3. Setting File `next.config.js`
+Setiap kali kamu push ke repository GitHub, Vercel akan otomatis deploy ulang website dengan update terbaru.
 
-File `next.config.js` sudah diatur buat GitHub Pages dengan kode ini:
+## License
 
-```javascript
-basePath: process.env.NODE_ENV === 'production' ? '/nama-repository-kamu' : '',
-```
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Ganti `/nama-repository-kamu` dengan nama repository yang kamu buat.
+## Contact
 
-### 4. Upload ke GitHub
-
-Jalankan perintah ini di terminal:
-
-```sh
-git init
-git add .
-git commit -m "Upload pertama"
-git branch -M main
-git remote add origin https://github.com/username-kamu/nama-repository-kamu.git
-git push -u origin main
-```
-
-### 5. Aktifin GitHub Pages
-
-1. Buka repository kamu di GitHub
-2. Klik tab "Settings"
-3. Scroll ke bawah sampai ketemu bagian "Pages"
-4. Di bagian "Source", pilih "GitHub Actions"
-5. GitHub akan otomatis menggunakan file `.github/workflows/deploy.yml` untuk memproses website kamu
-
-### 6. Tunggu Prosesnya
-
-GitHub Actions akan otomatis proses website kamu. Kamu bisa pantau prosesnya di tab "Actions" di repository.
-
-### 7. Cek Website Kamu
-
-Setelah selesai, website portfoliomu bisa diakses di:
-```
-https://username-kamu.github.io/nama-repository-kamu
-```
-
-Mau pakai domain sendiri? Bisa! Cek [Panduan custom domain GitHub Pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site).
-
-## Update Terbaru ⭐
-
-- Tambah skill cloud computing: AWS, Digital Ocean, Alibaba Cloud, Tencent Cloud
-- Blog load lebih cepet dan bisa difilter sesuai kategori
-- Tampilan portfolio lebih lengkap dengan detail dan filter
-- Animasi dan tampilan lebih keren
-- Perbaikan URL icon
-
-## Mau Ikut Kontribusi? 👨‍💻
-
-Boleh banget! Kalau mau nambahin atau perbaiki sesuatu:
-
-1. Fork repository ini
-2. Bikin branch baru (`git checkout -b fitur/fitur-kamu`)
-3. Commit perubahan (`git commit -am 'Nambahin fitur keren'`)
-4. Push ke branch (`git push origin fitur/fitur-kamu`)
-5. Kirim Pull Request
-
-## Lisensi
-
-Proyek ini dilisensikan di bawah Lisensi MIT. Lihat file [LICENSE](LICENSE) untuk detail lengkapnya.
-
----
-
-Dibuat dengan ❤️ oleh Muhammad Jundy Rabbani | [GitHub](https://github.com/jundy779) | [LinkedIn](https://www.linkedin.com/in/muh-jundy-rabbani/)
+- Email: jundfauzi789@gmail.com
+- LinkedIn: [Muhammad Jundy Rabbani](https://www.linkedin.com/in/muh-jundy-rabbani/)
+- Instagram: [@muh_jundy_r](https://www.instagram.com/muh_jundy_r)
 
 ## Screenshot Portfolio 📸
 
@@ -184,9 +102,12 @@ Berikut beberapa tampilan dari website portfolio:
 
 ### Tampilan Desktop
 
-![image](https://github.com/user-attachments/assets/21825f58-b04e-462a-ac49-7b53a0a6fb3f)
-![image](https://github.com/user-attachments/assets/af3e8a12-8382-40ea-b4f4-97f75d78efa7)
-![image](https://github.com/user-attachments/assets/1d0b7e78-9659-46c6-ad90-0d01faa11018)
+![image](https://github.com/user-attachments/assets/
+c1a694d1-0aeb-438a-8f51-f5cc313c9bb3)
+![image](https://github.com/user-attachments/assets/
+31a2d151-9654-4a55-8504-69f8901497a0)
+![image](https://github.com/user-attachments/assets/
+aea9a5e0-5758-4e62-b1ff-c29c59d63b82)
 
 ### Tampilan Mobile
 
@@ -273,4 +194,3 @@ Website ini dibuat dengan bantuan teknologi dan resource hebat berikut:
 - [GitHub Pages](https://pages.github.com) - Hosting gratis untuk website statis
 
 Special thanks untuk semua kontributor dan komunitas open-source yang telah membuat teknologi hebat ini tersedia secara gratis.
-Explain
