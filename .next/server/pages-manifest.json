@@ -1,10 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/education": "pages/education.js",
-  "/skill": "pages/skill.js",
-  "/album": "pages/album.js",
-  "/experience": "pages/experience.js"
-}
+{"/_app":"pages/_app.js","/_document":"pages/_document.js","/album":"pages/album.html","/blog":"pages/blog.html","/education":"pages/education.html","/experience":"pages/experience.html","/skill":"pages/skill.html","/":"pages/index.html","/_error":"pages/_error.js","/404":"pages/404.html"}
