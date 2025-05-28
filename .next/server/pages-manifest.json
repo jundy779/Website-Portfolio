@@ -1,8 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/skill": "pages/skill.js",
-  "/blog": "pages/blog.js",
-  "/": "pages/index.js"
-}
+{"/_app":"pages/_app.js","/album":"pages/album.html","/_document":"pages/_document.js","/blog":"pages/blog.html","/_error":"pages/_error.js","/education":"pages/education.html","/experience":"pages/experience.html","/":"pages/index.html","/skill":"pages/skill.html","/404":"pages/404.html"}
