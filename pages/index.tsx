@@ -35,6 +35,7 @@ import {
   IconBrandGooglePlay,
   IconGlobe,
 } from '@tabler/icons-react';
+import { useTheme } from 'next-themes';
 
 const socialLinks = [
   {
@@ -171,7 +172,6 @@ const portfolioItems = [
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [visibleProjectCount, setVisibleProjectCount] = useState(5);
@@ -179,6 +179,7 @@ export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState('All Projects');
   const [scrollProgress, setScrollProgress] = useState(0);
   const modalRef = useRef(null);
+  const { resolvedTheme, setTheme } = useTheme();
 
   // Filter projects berdasarkan kategori yang dipilih
   const filteredProjects = selectedCategory === 'All Projects' 
@@ -204,17 +205,6 @@ export default function Home() {
   };
 
   useEffect(() => {
-    // Check if dark mode preference exists in localStorage
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-    setDarkMode(isDarkMode);
-    
-    // Apply dark mode class to html element
-    if (isDarkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-
     const handleScroll = () => {
       // Show scroll to top button
       setShowScrollTop(window.scrollY > 300);
@@ -276,18 +266,6 @@ export default function Home() {
     };
   }, [selectedProject]);
 
-  const toggleDarkMode = () => {
-    const newDarkMode = !darkMode;
-    setDarkMode(newDarkMode);
-    localStorage.setItem('darkMode', newDarkMode.toString());
-    
-    if (newDarkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  };
-
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -339,11 +317,13 @@ export default function Home() {
 
             <div className="flex items-center space-x-4">
               <button
-                onClick={toggleDarkMode}
+                onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
                 className="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-darkbg-lighter transition-colors duration-300"
-                aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
+                aria-label={resolvedTheme === 'dark' ? "Switch to light mode" : "Switch to dark mode"}
               >
-                {darkMode ? <IconSun size={20} className="text-yellow-400" /> : <IconMoon size={20} className="text-primary" />}
+                {resolvedTheme === 'dark'
+                  ? <IconSun size={20} className="text-yellow-400" />
+                  : <IconMoon size={20} className="text-primary" />}
               </button>
 
             <button
@@ -430,9 +410,14 @@ export default function Home() {
           <div className="text-center px-4 z-10" data-aos="fade-up">
             <div className="relative inline-block mb-6" data-aos="zoom-in" data-aos-delay="300">
               <div className="w-32 h-32 rounded-full bg-white dark:bg-darkbg-lighter shadow-lg overflow-hidden p-1 border border-primary/20">
-                <div className="w-full h-full rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white text-4xl font-bold">
-                  MJ
-                </div>
+                <Image
+                  src="/profile-hero.jpg"
+                  alt="Profile Hero"
+                  width={128}
+                  height={128}
+                  priority
+                  className="w-full h-full rounded-full object-cover bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white text-4xl font-bold"
+                />
               </div>
               <div className="absolute -bottom-2 -right-2 bg-white dark:bg-darkbg-lighter rounded-full p-2 shadow-md border border-primary/20">
                 <IconDeviceGamepad2 size={20} className="text-primary" />

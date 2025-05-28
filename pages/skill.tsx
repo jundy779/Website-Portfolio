@@ -67,6 +67,12 @@ const SkillsPage = () => {
         { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
         { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
         { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+        // Cloud Computing
+        { name: "Digital Ocean", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/digitalocean/digitalocean-original.svg" },
+        { name: "Alibaba Cloud", icon: "https://i.supa.codes/ahFzdH" },
+        { name: "AWS Amazon", icon: "https://i.supa.codes/3ujqkB" },
+        { name: "Tencent Cloud", icon: "https://i.supa.codes/yzYN--" },
+        { name: "GCP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" },
       ]
     }
   ];

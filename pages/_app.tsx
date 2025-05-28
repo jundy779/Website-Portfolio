@@ -94,7 +94,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
           siteName: 'Muhammad Jundy Rabbani Portfolio',
           images: [
             {
-              url: 'https://kappa.lol/ljAtM',
+              url: 'https://kappa.lol/Wtr4rN',
               width: 1200,
               height: 630,
               alt: 'Muhammad Jundy Rabbani',
