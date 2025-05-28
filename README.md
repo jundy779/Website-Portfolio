@@ -3,15 +3,12 @@ Website portfolio kece buat Kalian. Dibuat pakai Next.js, React, dan Tailwind CS
 
 A modern, responsive portfolio website showcasing my work as a Student, Gamer, and Business Development professional. Built with Next.js, React, and Tailwind CSS.
 
-![image](https://github.com/user-attachments/assets/
-c1a694d1-0aeb-438a-8f51-f5cc313c9bb3)
-![image](https://github.com/user-attachments/assets/
-31a2d151-9654-4a55-8504-69f8901497a0)
-![image](https://github.com/user-attachments/assets/
-aea9a5e0-5758-4e62-b1ff-c29c59d63b82)
+![image](https://github.com/user-attachments/assets/c1a694d1-0aeb-438a-8f51-f5cc313c9bb3)
+![image](https://github.com/user-attachments/assets/31a2d151-9654-4a55-8504-69f8901497a0)
+![image](https://github.com/user-attachments/assets/aea9a5e0-5758-4e62-b1ff-c29c59d63b82)
 
 ## Live Demo
-Visit my portfolio at: [muh-jundy-rabbani.vercel.app](https://muh-jundy-rabbani.vercel.app)
+Visit my portfolio at: [(https://muh-jundy-rabbani.vercel.app)](https://website-portfolio-jundy779s-projects.vercel.app/)
 
 ## Features ✨
 
