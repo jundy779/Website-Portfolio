@@ -1,9 +1,10 @@
 # Website Portfolio Keren Pakai Next.js 🚀
-[![Deploy to GitHub Pages](https://github.com/jundy779/portfolio-website/actions/workflows/deploy.yml/badge.svg)](https://github.com/jundy779/portfolio-website/actions/workflows/deploy.yml)
-
 Website portfolio kece buat Kalian. Dibuat pakai Next.js, React, dan Tailwind CSS.
 
-![image](https://github.com/user-attachments/assets/5118b7d4-1e1c-4a90-b04c-ed04195711bb)
+![image](https://github.com/user-attachments/assets/c1a694d1-0aeb-438a-8f51-f5cc313c9bb3)
+![image](https://github.com/user-attachments/assets/31a2d151-9654-4a55-8504-69f8901497a0)
+![image](https://github.com/user-attachments/assets/aea9a5e0-5758-4e62-b1ff-c29c59d63b82)
+
 
 ## Apa Sih Ini? 🤔
 
